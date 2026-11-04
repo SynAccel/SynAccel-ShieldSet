@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synaccel-shieldset"
+version = "0.1.0"
+description = "Audit ML training datasets for label-flipping and neighborhood-based poisoning"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["numpy", "scikit-learn"]
+
+[project.scripts]
+synaccel-shieldset = "synaccel_shieldset.cli:main"
+
+[tool.setuptools]
+packages = ["synaccel_shieldset"]
